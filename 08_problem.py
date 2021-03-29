@@ -1,32 +1,57 @@
 """
-??? Question with two examples ???
+You are given a two-dimensional list of strings contacts. Each element contacts[i] represents the list of emails for contact i. Contact i is considered a duplicate if there's a j < i such that contact j shares a common email with i. Return the number of unique people in contacts.
+
+Constraints
+0 ≤ n ≤ 100,000 where n is the total number of strings in contacts
+
+Example 1
+Input
+contacts = [
+    ["elon@tesla.com", "elon@paypal.com"],
+    ["elon@tesla.com", "elon@spacex.com"],
+    ["tim@apple.com"]
+]
+Output
+2
+
+Explanation
+Contact 0 and 1 are the same person since they share a common email "elon@tesla.com". Then, contact 2 is another person.
 """
+
 
 import unittest
 
+# Implement the below function and run this file
+# Return the output, No need read input or print the ouput
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+
+def solve(contacts):
     pass
 
 
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestIsPrime(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        self.assertEqual(solve([
+    ["bill@microsoft.com"],
+    ["jack@twitter.com"],
+    ["jeff@amazon.com"]
+]), 3)
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_02(self):
+        self.assertEqual(solve([
+    ["lawrence@gmail.com"],
+    ["lawrence@gmail.com", "larry@gmail.com"],
+    ["larry@gmail.com"]
+]), 1)
+
+    def test_03(self):
+        self.assertEqual(solve([
+    ["elon@tesla.com", "elon@paypal.com"],
+    ["elon@tesla.com", "elon@spacex.com"],
+    ["tim@apple.com"]
+]), 2)
 
 
 if __name__ == '__main__':
