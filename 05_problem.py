@@ -1,33 +1,42 @@
 """
-??? Question with two examples ???
+Given an integer n, return whether its prime factors only include 2, 3 or 5.
+
+Constraints
+
+0 ≤ n < 2 ** 31
+Example 1
+Input
+n = 10
+Output
+True
+Explanation
+10's prime factors are 2 and 5.
 """
+
 
 import unittest
 
+# Implement the below function and run this file
+# Return the output, No need read input or print the ouput
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+
+def solve(n):
     pass
 
-
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestIsPrime(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        self.assertEqual(solve(134), False)
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_02(self):
+        self.assertEqual(solve(160), True)
+
+    def test_03(self):
+        self.assertEqual(solve(982941), False)
 
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
+
+
