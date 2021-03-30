@@ -1,32 +1,45 @@
-"""
-??? Question with two examples ???
-"""
+'''
 
-import unittest
+Find Suffix
 
+Given an input string s and a list of all possible words, return all words that have s as a suffix.
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+Example 1:
+Input:
+s = “ge”
+words = [“judge”, “hedge”, “stretch”]
+
+Output:
+[“judge”, “hedge”]
+
+Explanation:
+Only judge and hedge end with ed.
+
+Example 2:
+Input:
+s = “mental”
+words = [“sentimental”,  “monumental”, “mathematical”, “computational", “judgemental”]
+
+Output:
+[“sentimental”,  “monumental”, “judgemental”]
+
+Explanation:
+All these words end with mental, except for “mathematical” and “computational”.
+'''
+
+# Implement the below function and run the program
+
+def findSuffix(suffix, words):
     pass
 
-
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestfindSuffix(unittest.TestCase):
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_1(self):
+        self.assertEqual(findSuffix('te', ['mute', 'loot', 'mate']), ['mute', 'mate'])
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_2(self):
+        self.assertEqual(findSuffix('e', ['state', 'plate', 'hate', 'jack', 'fate', 'nail']), ['state', 'plate', 'hate', 'fate'])
 
 
 if __name__ == '__main__':
