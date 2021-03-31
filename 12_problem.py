@@ -1,32 +1,48 @@
 """
-??? Question with two examples ???
+Given a string s, return its run-length encoding that is represent repeated successive characters as a single count and character.
+You can assume the string to be encoded have no digits and consists solely of alphabetic characters.
+
+Example 1:
+Input:
+s = "aaaabbbccdaa"
+
+Output:
+"4a3b2c1d2a"
+
+
+Example 2:
+Input:
+s = "abcde
+
+Output:
+"1a1b1c1d1e"
+
 """
 
-import unittest
+#Implement the below function and run this file
+# Return the output, No need to read input or print the output
 
-
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+def runLengthEncode(s):
     pass
 
+#DO NOT TOUCH THE BELOW CODE
 
-# Add these test cases, and remove this placeholder
+class TestrunLengthEncode(unittest.TestCase):
 
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
+    def test_1(self):
+        self.assertEqual(runLengthEncode("aaaabbbccdaa"), "4a3b2c1d2a")
 
-# DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+    def test_2(self):
+        self.assertEqual(runLengthEncode("abcde"), "1a1b1c1d1e")
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_3(self):
+        self.assertEqual(runLengthEncode("aabba"), "2a2b1a")
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_4(self):
+        self.assertEqual(runLengthEncode("aaaaaaaaaa"), "10a")
+
+    def test_5(self):
+        self.assertEqual(runLengthEncode("asjjfdc"), "1a1s2j1f1d1c")
 
 
 if __name__ == '__main__':

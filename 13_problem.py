@@ -1,32 +1,45 @@
-"""
-??? Question with two examples ???
-"""
+'''
+Longest Palindromic Subsequence
 
-import unittest
+Given a string s with all lower case characters, find the length of the longest palindromic subsequence in s.
 
+Example 1:
+Input:
+s = "rbaicneacrayr"
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+Output:
+7
+
+Explanation:
+racecar is the longest palindromic subsequence of rbaicneacrayr
+
+Example 2:
+Input:
+s = "chsoachrudeoe"
+
+Output:
+8
+
+Explanation:
+choeeohc is the longest palindromic subsequence of chsoachrudeoe
+
+'''
+
+#Implement the below function and run this file
+# Return the output, No need to read input or print the output
+
+def longBin(s):
     pass
 
+#DO NOT TOUCH THE BELOW CODE
 
-# Add these test cases, and remove this placeholder
+class TestlongBin(unittest.TestCase):
 
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
+    def test_1(self):
+        self.assertEqual(longBin("rbaicneacrayr"), 7)
 
-# DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
-
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
-
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_2(self):
+        self.assertEqual(longBin("chsoachrudeoe"), 8)
 
 
 if __name__ == '__main__':

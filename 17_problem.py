@@ -1,33 +1,40 @@
 """
-??? Question with two examples ???
+WAP to to change the case of the letters of a "n" strings in such a way that if the length of the string is odd the word is to be converted to upper case and lowercase for even length.
+if the word ends with a vowel, then the last letter should be converted to upper case.
+Merge all the strings and make sure the merged string is printed as well as the upper case and lower case letters seperately in a new line each.
+store the entire result in a list
+Constraints
+
+n < 100
+
+Example 1
+Input
+Apple Camera Tool
+
+Output
+APPLEcamerAtool
+APPLEA
+camertool
 """
+
 
 import unittest
 
+# Implement the below function and run this file
+# Return the output, No need read input or print the ouput
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+
+def solve(n):
+    '''
+    implement the problem 
+    '''
+    
     pass
 
-
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
-# DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
-
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
-
-        self.assertEqual(method_name(input_nums), output_nums)
-
+class VowelChangecase(unittest.TestCase):
+    
+    def test_1(self):
+        self.assertEqual(solve("Apple Camera Tool"), ["APPLEcamerAtool","APPLEA","camertool"])
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

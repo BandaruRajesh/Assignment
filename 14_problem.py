@@ -1,32 +1,48 @@
-"""
-??? Question with two examples ???
-"""
+'''
+Add Binary Numbers
 
-import unittest
+Given two strings a and b that represent binary numbers, add them and return their sum, also as a string.
+The input strings are guaranteed to be non-empty and contain only 1s and 0s.
 
+Example 1:
+Input:
+a = "1"
+b = "1"
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+Output:
+"10"
+
+Example 2:
+Input:
+a = "111"
+b = "1"
+
+Output:
+"1000"
+
+'''
+
+#Implement the below function and run this file
+# Return the output, No need to read input or print the output
+
+def addBinary(a,b):
     pass
 
+#DO NOT TOUCH THE BELOW CODE
 
-# Add these test cases, and remove this placeholder
+class TestaddBinary(unittest.TestCase):
 
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
+    def test_1(self):
+        self.assertEqual(addBinary("1", "1"), "10")
 
-# DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+    def test_2(self):
+        self.assertEqual(addBinary("111", "1"), "1000")
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_3(self):
+        self.assertEqual(addBinary("110", "10"), "1000")
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_4(self):
+        self.assertEqual(addBinary("1010", "1011"), "10101")
 
 
 if __name__ == '__main__':
