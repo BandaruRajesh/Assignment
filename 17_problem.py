@@ -34,7 +34,7 @@ def solve(n):
 class VowelChangecase(unittest.TestCase):
     
     def test_1(self):
-        self.assertEqual(solve("Apple Camera Tool"), [APPLEcamerAtool,APPLEA,camertool])
+        self.assertEqual(solve("Apple Camera Tool"), ["APPLEcamerAtool","APPLEA","camertool"])
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
