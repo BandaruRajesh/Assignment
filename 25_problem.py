@@ -1,32 +1,48 @@
-"""
-??? Question with two examples ???
-"""
+'''
+Find Prefix
 
-import unittest
+Given an input string s and a list of all possible words, return all words that have s as a prefix.
+
+Example 1:
+
+Input:
+s = “re”
+words = [“red”, “real”, “fear”]
+
+Output:
+[“red”, “real”]
+
+Explanation:
+Only real and red begin with re.
+
+Example 2:
+
+Input:
+s = “b”
+words = [“banana”, “biscuit”, “drip”, “blip”, “belt”]
+
+Output:
+[“banana”, “biscuit”, “blip”, “belt”]
+
+Explanation:
+All these words start with b, except for “drip”.
+'''
 
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+# Implement the below function and run the program
+
+def findPrefix(prefix, words):
     pass
 
-
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+class TestfindPrefix(unittest.TestCase):
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_1(self):
+        self.assertEqual(findPrefix('re', ['red', 'real', 'fear']), ['red', 'real'])
+
+    def test_2(self):
+        self.assertEqual(findPrefix('b', ['banana', 'biscuit', 'drip', 'blip', 'belt']), ['banana', 'biscuit', 'blip', 'belt'])
 
 
 if __name__ == '__main__':

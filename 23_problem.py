@@ -1,33 +1,55 @@
-"""
-??? Question with two examples ???
-"""
+'''
+Circular Prime
 
-import unittest
+Given an integer n, return whether every circular rotation of n is prime.
 
+Example 1:
+Input:
+n = 113
+Output:
+True
+Explanation:
+113 is prime, 131 is prime, and 311 is prime.
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+Example 2:
+Input:
+n = 17
+Output:
+False
+Explanation:
+Even though 17 is prime, 71 is not.
+'''
+
+# Import this module
+import math
+
+#Implement the below function and run this file
+# Return the output, No need to read input or print the output
+
+def is_Prime(n):
     pass
 
+def is_circular_prime(num):
+    pass
 
-# Add these test cases, and remove this placeholder
+#DO NOT TOUCH THE BELOW CODE
 
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
+class Testis_circular_prime(unittest.TestCase):
 
-# DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+    def test_1(self):
+        self.assertEqual(is_rotating_prime(113), True)
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_2(self):
+        self.assertEqual(is_rotating_prime(199), True)
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_3(self):
+        self.assertEqual(is_rotating_prime(17), False)
 
+    def test_4(self):
+        self.assertEqual(is_rotating_prime(12), False)
+
+    def test_5(self):
+        self.assertEqual(is_rotating_prime(1193), True)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
