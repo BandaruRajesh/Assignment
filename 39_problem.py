@@ -7,6 +7,11 @@ n=10
 Output
 29
 
+Example 2
+Input  
+n=5
+Output
+11
 """
 
 import unittest
@@ -31,6 +36,9 @@ class TestPrimeNum(unittest.TestCase):
 
     def test_01(self):
         self.assertEqual(PrimeNum(10), 29)
+
+    def test_02(self):
+        self.assertEqual(PrimeNum(5), 11)
 
 
 if __name__ == '__main__':
