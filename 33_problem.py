@@ -1,16 +1,15 @@
 """
-??? Question with two examples ???
+??? program to remove spaces in a string ???
+For example:
+Input="j o h n"
+Output="john"
 """
 
 import unittest
 
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
-    pass
-
+def remove_space(string):
+    return string.replace(" ", "") 
 
 # Add these test cases, and remove this placeholder
 
@@ -22,11 +21,11 @@ def method_name(nums):
 # DO NOT TOUCH THE BELOW CODE
 class TestMethodName(unittest.TestCase):
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_removespace(self):
+        string="p r o g r a m"
+        newstring ="program" 
 
-        self.assertEqual(method_name(input_nums), output_nums)
+        self.assertEqual(remove_space(string),newstring)
 
 
 if __name__ == '__main__':

@@ -1,15 +1,13 @@
 """
-??? Question with two examples ???
+??? Program to update a dictionary ???
 """
 
 import unittest
 
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
-    pass
+def dictup(d,d1):
+    d.update(d1)
+    return d
 
 
 # Add these test cases, and remove this placeholder
@@ -22,11 +20,12 @@ def method_name(nums):
 # DO NOT TOUCH THE BELOW CODE
 class TestMethodName(unittest.TestCase):
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+    def test_dictupdate(self):
+        d = {1:"apple",2:"banana"}
+        d1 = {3:"orange"}
+        newd={1:"apple",2:"banana",3:"orange"}
 
-        self.assertEqual(method_name(input_nums), output_nums)
+        self.assertEqual(dictup(d,d1),newd)
 
 
 if __name__ == '__main__':
