@@ -1,15 +1,16 @@
 """
-??? Question with two examples ???
+???Program to perform addition,subtraction and multiplication of two numbers ???
 """
 
 import unittest
 
+def add(x,y):
+        return x+y
+def sub(x,y):
+        return x-y
+def multiply(x,y):
+        return x*y
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
-    pass
 
 
 # Add these test cases, and remove this placeholder
@@ -22,12 +23,11 @@ def method_name(nums):
 # DO NOT TOUCH THE BELOW CODE
 class TestMethodName(unittest.TestCase):
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
-
-        self.assertEqual(method_name(input_nums), output_nums)
-
+    def test_add(self):
+        
+        self.assertEqual(add(10,5),15)
+        self.assertEqual(sub(10,5),5)
+        self.assertEqual(multiply(10,5),50)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

@@ -1,15 +1,10 @@
 """
-??? Question with two examples ???
+??? PROGRAM TO CHECK WHETHER A STRING IS PRESENT IN A GIVEN INPUT???
 """
 
-import unittest
+import pytest
 
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
-    pass
 
 
 # Add these test cases, and remove this placeholder
@@ -20,14 +15,14 @@ def method_name(nums):
 # 4. Large Inputs
 
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestClass:
+    def test_one(self):
+        x='tom'
+        assert 'o' in x
+    # def test_two(self)
+    def test_two(self):
+        y='sorry'
+        title='sorry sorry'
+        assert y in title
 
-    def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
 
-        self.assertEqual(method_name(input_nums), output_nums)
-
-
-if __name__ == '__main__':
-    unittest.main(verbosity=2)
