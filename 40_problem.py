@@ -1,11 +1,27 @@
 """
-??? Question with two examples ???
+Write a Python Program to display the following series upto given inter n where n>0 and n<1000.
+
+Example 1  
+Input 
+n=5
+Output
+[0,2,1,3,1]
+
+Example 2  
+Input 
+n=10
+Output
+[0,2,1,3,1,5,2,7,3,11]
+
+Hint: Check if the series is generating fibonacci and primes
+
+
 """
 
 import unittest
 
 
-def method_name(nums):
+def SeriesGen(nums):
     """
     ??? Write what needs to be done ???
     """
@@ -20,13 +36,16 @@ def method_name(nums):
 # 4. Large Inputs
 
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestSeriesGen(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        
+        self.assertEqual(SeriesGen(5), [0,2,1,3,1])
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_02(self):
+        
+        self.assertEqual(SeriesGen(10),[0,2,1,3,1,5,2,7,3,11] )
+
 
 
 if __name__ == '__main__':

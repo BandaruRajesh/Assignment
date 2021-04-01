@@ -1,11 +1,23 @@
 """
-??? Question with two examples ???
+Write a function that takes an integer n and returns the nth Prime number.
+
+Example 1  
+Input  
+n=10
+Output
+29
+
+Example 2
+Input  
+n=5
+Output
+11
 """
 
 import unittest
 
 
-def method_name(nums):
+def PrimeNum(nums):
     """
     ??? Write what needs to be done ???
     """
@@ -20,13 +32,13 @@ def method_name(nums):
 # 4. Large Inputs
 
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestPrimeNum(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        self.assertEqual(PrimeNum(10), 29)
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_02(self):
+        self.assertEqual(PrimeNum(5), 11)
 
 
 if __name__ == '__main__':

@@ -1,32 +1,41 @@
 """
-??? Question with two examples ???
 """
+"""
+Given an integer n, return the minimum number you can make by inserting 3 anywhere in the number.
+
+Example 1
+Input
+n = 526
+Output
+3526
+
+Example 2
+Input
+n = 235
+Output
+2353
+"""
+
 
 import unittest
 
+# Implement the below function and run this file
+# Return the output, No need read input or print the ouput
 
-def method_name(nums):
-    """
-    ??? Write what needs to be done ???
-    """
+
+def MinNUm(n):
     pass
 
-
-# Add these test cases, and remove this placeholder
-
-# 1. Test Cases from the Examples of Problem Statement
-# 2. Other Simple Cases
-# 3. Corner/Edge Cases
-# 4. Large Inputs
-
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestMinNum(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        self.assertEqual(MinNum(526), 3526)
 
-        self.assertEqual(method_name(input_nums), output_nums)
+    def test_02(self):
+        self.assertEqual(MinNum(235), 2353)
+
+    
 
 
 if __name__ == '__main__':
