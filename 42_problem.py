@@ -1,11 +1,21 @@
 """
-??? Question with two examples ???
+Write a program to find the sum of first 3 digits after the decimal in the Natural Logarithmic value of given positive number.
+Constraints :
+1<=n<=106
+
+Example 1 
+Input Case 1 :
+14
+OUTPUT :
+18
+Explanation : log(14)=>2.639
+
 """
 
 import unittest
 
 
-def method_name(nums):
+def LogSum(nums):
     """
     ??? Write what needs to be done ???
     """
@@ -20,13 +30,12 @@ def method_name(nums):
 # 4. Large Inputs
 
 # DO NOT TOUCH THE BELOW CODE
-class TestMethodName(unittest.TestCase):
+class TestLogSum(unittest.TestCase):
 
     def test_01(self):
-        input_nums = [1, 2, 3, 4]
-        output_nums = 10
+        
 
-        self.assertEqual(method_name(input_nums), output_nums)
+        self.assertEqual(LogSum(14), 18)
 
 
 if __name__ == '__main__':
